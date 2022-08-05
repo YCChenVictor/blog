@@ -1,15 +1,29 @@
 ---
 layout: post
-title: (OS 2) How Operating System Works
+title: how operating system works
 description: ''
 date: '2021-12-04'
 categories: OS
-note:
+note: p5 要加一個可以打字的功能，我可能要切一個 develop 分支
+p5: true
+publish:
 ---
 
 ## Introduction
 
 Operating System serves as the communicator between computer hardware and computer software applications.
+
+<div id='os' class='h-screen justify-center items-center'>
+  <div id='os_toggle_erase' class=''></div>
+  <div id='os_image_save' class=''></div>
+  <div id='os_canvas' class='border'></div>
+</div>
+
+<script>
+  const id = 'os'
+  let binarySearchTree = p5Draw(id)
+  let binarySearchTreeP5 = new p5(binarySearchTree, id);
+</script>
 
 ## Why?
 
@@ -17,29 +31,17 @@ Without it, the computer will not operate the Apps we want.
 
 ## How?
 
-Try to explain the steps among the gap between App and hardware as follow:
-
-1. user click an app on the computer UI
-2. the app start to run and it need some computation
-3. the data flow to operation system
-4. operation system call hardware (CPU, RAM, I/O) to compute it
-5. data sent back to OS
-6. OS send data back to app
-7. user get what they want in UI
-
-## What?
-
 Typically, functions as follow:
 
-1. memory management
-2. process management
-3. device management
-4. file management
-5. security
-6. performance monitoring
-7. job accounting
-8. error detecting aids
-9. coordination between other software and users
+* memory management
+* process management
+* device management
+* file management
+* security
+* performance monitoring
+* job accounting
+* error detecting aids
+* coordination between other software and users
 
 ### memory management
 
@@ -72,6 +74,23 @@ Given noise in transmission of data, error detecting ensures reliable delivery o
 ### coordination
 
 Given lots of program at the sametime, OS corrdination serves to schedule these programs.
+
+## What?
+
+In this section, let's take a look at the above functions in operating systems and explore them with following steps:
+
+1. user click an app on the computer UI
+2. the app start to run and it need some computation
+3. the data flow to operation system
+4. operation system call hardware (CPU, RAM, I/O) to compute it
+5. data sent back to OS
+6. OS send data back to app
+7. user get what they want in UI
+
+### Mac OS
+
+(to be continued)
+
 ## Reference
 
 [Operating system](https://en.wikipedia.org/wiki/Operating_system)

@@ -1,10 +1,10 @@
 ---
 layout: post
-title: (OS 3) Process Management
+title: process management
 description: ''
 date: '2021-12-24'
 categories: OS
-note: going to finish it later
+note:
 ---
 
 
@@ -15,14 +15,20 @@ With the help of PCB (Process Control Block), OS can manage tasks such as creati
 ## Why?
 
 Explain why to use PCB
+
 ## How?
 
 Explain the structure of PCB
 
 ## What?
 
-Explain the outcome or effect of PCB
+
 
 ## Reference
 
+[Operating System: Process and Process Management
+](https://medium.com/@akhandmishra/operating-system-process-and-process-management-108d83e8ce60)
+
 [Process Management in OS: PCB in Operating System](https://www.guru99.com/process-management-pcb.html)
+
+[Process Control Block](https://www.youtube.com/watch?v=4s2MKuVYKV8)
